@@ -1408,6 +1408,11 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .emd\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 976px) {
