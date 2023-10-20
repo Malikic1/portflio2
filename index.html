@@ -45,13 +45,55 @@
       .ul li {
         list-style-type: circle;
       }
-      #customRange {
-        border-radius: 5px;
-        height: 5px;
-      }
-      #customRange:-webkit-slider-thumb {
-        background-color: #3371f2 !important;
+
+      input[type="range"] {
+        /* removing default appearance */
+        -webkit-appearance: none;
         appearance: none;
+        /* creating a custom design */
+        width: 70%;
+        cursor: pointer;
+        outline: none;
+        /*  slider progress trick  */
+        overflow: hidden;
+        border-radius: 5px;
+      }
+
+      /* Track: webkit browsers */
+      input[type="range"]::-webkit-slider-runnable-track {
+        height: 7px;
+        background: #b3b5b9;
+        border-radius: 5px;
+      }
+
+      /* Track: Mozilla Firefox */
+      input[type="range"]::-moz-range-track {
+        height: 7px;
+        background: #b3b5b9;
+        border-radius: 16px;
+      }
+
+      /* Thumb: webkit */
+      input[type="range"]::-webkit-slider-thumb {
+        /* removing default appearance */
+        -webkit-appearance: none;
+        appearance: none;
+        /* creating a custom design */
+        height: 8px;
+        width: 8px;
+        background-color: #3371f2;
+
+        /*  slider progress trick  */
+        box-shadow: -407px 0 0 400px #3371f2;
+      }
+
+      /* Thumb: Firefox */
+      input[type="range"]::-moz-range-thumb {
+        height: 8px;
+        width: 8px;
+        background-color: #3371f2;
+        /*  slider progress trick  */
+        box-shadow: -407px 0 0 400px #3371f2;
       }
     </style>
   </head>
@@ -173,10 +215,10 @@
           </div>
         </section>
         <section
-          class="flex-col space-y-5 md:w-2/3 text-center md:text-left self-center md:-mt-0 bg-gray pt-12 pb-4 md:pt-24 md:pb-20 pl-2 pr-2 md:pl-20 md:pr-8 lg:pl-36 lg:pr-28"
+          class="flex-col space-y-5 md:w-2/3 text-center md:text-left self-center md:-mt-0 bg-gray pt-12 pb-4 md:pt-20 md:pb-20 pl-2 pr-2 md:pl-20 md:pr-8 lg:pl-36 lg:pr-28"
         >
-          <p class="text-4xl font md:text-3xl">About Me</p>
-          <p class="text-grey -mt-12 text-sm pb-8 md:pb-0 text-base">
+          <p class="text-4xl text-blue font md:text-3xl">About Me</p>
+          <p class="text-smoke -mt-12 pb-8 md:pb-4 text-lg">
             I have a wealth experience in the <b><i>audiovisual field</i></b> ,
             from working as an operator or technician in studios to directing
             mobile unit. This versatility along with my problem-solving skills
@@ -186,53 +228,53 @@
             in this exciting field.
           </p>
           <div class="flex">
-            <section class="w-1/2">
-              <p class="relative -top-4">
-                <span class="text-lg font-semibold">Agility</span><br />
-                <input
-                  type="range"
-                  name=""
-                  id="customRange"
-                  value="80"
-                  min="0"
-                  max="100"
-                  class="relative -top-3"
-                  disabled
-                />
-              </p>
-              <p class="relative -top-6">
-                <span class="text-lg font-semibold">Puntality</span><br />
-                <input
-                  type="range"
-                  name=""
-                  id="customRange"
-                  value="90"
-                  min="0"
-                  max="100"
-                  class="relative -top-3"
-                  disabled
-                />
-              </p>
-              <p class="relative -top-6">
-                <span class="text-lg font-semibold">Hardworking</span><br />
-                <input
-                  type="range"
-                  name=""
-                  id="customRange"
-                  value="100"
-                  min="0"
-                  max="100"
-                  class="relative -top-3"
-                  disabled
-                />
-              </p>
-              <p class="relative -top-6">
-                <span class="text-lg font-semibold">Team Cooperation</span
+            <section class="w-1/2 pl-8">
+              <p class="relative -top-4 text-left">
+                <span class="text-base text-grey font-semibold">Leadership</span
                 ><br />
                 <input
                   type="range"
                   name=""
-                  id="customRange"
+                  value="89"
+                  min="0"
+                  max="100"
+                  class="relative -top-2"
+                  disabled
+                />
+              </p>
+              <p class="relative -top-6 text-left">
+                <span class="text-base text-grey font-semibold">Creativity</span
+                ><br />
+                <input
+                  type="range"
+                  name=""
+                  value="90"
+                  min="0"
+                  max="100"
+                  class="relative -top-2"
+                  disabled
+                />
+              </p>
+              <p class="relative -top-6 text-left">
+                <span class="text-base text-grey font-semibold"
+                  >Problem Solving</span
+                ><br />
+                <input
+                  type="range"
+                  name=""
+                  value="100"
+                  min="0"
+                  max="100"
+                  class="relative -top-2"
+                  disabled
+                />
+              </p>
+              <p class="relative -top-6 text-left">
+                <span class="text-base font-semibold text-grey">Teamwork</span
+                ><br />
+                <input
+                  type="range"
+                  name=""
                   value="95"
                   min="0"
                   max="100"
@@ -241,7 +283,7 @@
                 />
               </p>
             </section>
-            <section class="w-1/2">
+            <section class="w-1/2 pl-8">
               <p class="-mt-4">
                 <span class="text-blue font-semibold">Driving Licencse </span
                 ><br />
@@ -277,7 +319,10 @@
       </div>
       <br /><br />
       <div class="">
-        <p class="text-3xl font-bold text-center my-4 font">My skills</p>
+        <p class="text-3xl font-bold text-center mt-4 font">My skills</p>
+        <p class="text-gray text-base text-center mb-4">
+          Technical and Software Skills I Developed
+        </p>
         <section>
           <div
             class="justify-evenly w-full grid grid-cols-3 md:grid-cols-4 gap-y-4"
@@ -314,10 +359,20 @@
             >
               Experience
             </p>
+            <p class="text-gray text-base text-center md:text-left">
+              Practical Knowledge & Involvements
+            </p>
             <br />
             <div class="">
-              <p class="text-blue text-xl font-semibold">ParagmaticPlay</p>
-              <p><i>Broadcast Engineer</i></p>
+              <section class="flex justify-between mb-2">
+                <div class="">
+                  <p class="text-blue text-xl font-semibold">ParagmaticPlay</p>
+                  <p><i>Broadcast Engineer</i></p>
+                </div>
+                <div class="self-center w-1/3">
+                  <img class="w-12 rounded-md" src="images/play.png" />
+                </div>
+              </section>
               <ul class="text-grey ul">
                 <li>
                   Designing drafts for both studio and server room (and the
@@ -332,7 +387,7 @@
               </ul>
             </div>
             <div class="mt-3">
-              <p class="text-blue text-xl font-se,ibold">ATM Broadcast</p>
+              <p class="text-blue text-xl font-semibold">ATM Broadcast</p>
               <p><i>OB Technical Manager</i></p>
               <ul class="text-grey ul">
                 <li>
@@ -343,8 +398,15 @@
               </ul>
             </div>
             <div class="mt-3">
-              <p class="text-blue text-xl font-semibold">Agencia EFE</p>
-              <p><i>Master Control Room</i></p>
+              <section class="flex justify-between mb-2">
+                <div class="">
+                  <p class="text-blue text-xl font-semibold">Agencia EFE</p>
+                  <p><i>Master Control Room</i></p>
+                </div>
+                <div class="self-center w-1/3">
+                  <img class="w-12 rounded-md" src="images/efe.png" />
+                </div>
+              </section>
               <ul class="text-grey ul">
                 <li>Signal routing by matrix.</li>
                 <li>Satellite reception (IRDS).</li>
@@ -357,10 +419,17 @@
               </ul>
             </div>
           </section>
-          <section class="w-1/2">
+          <section class="md:w-1/2">
             <div class="mt-4 md:mt-10">
-              <p class="text-blue text-xl font-semibold">EL TORO TV</p>
-              <p><i>Master Control Room</i></p>
+              <section class="flex justify-between mb-2">
+                <div class="">
+                  <p class="text-blue text-xl font-semibold">EL TORO TV</p>
+                  <p><i>Master Control Room</i></p>
+                </div>
+                <div class="self-center w-1/3">
+                  <img class="w-12 rounded-md" src="images/toro.png" />
+                </div>
+              </section>
               <ul class="text-grey text-sm ul">
                 <li>Signal routing by matrix.</li>
                 <li>Satellite reception.</li>
@@ -378,8 +447,15 @@
             </div>
 
             <div class="mt-2">
-              <p class="text-blue text-xl font-semibold">Papyro</p>
-              <p><i>Broadcast Installer</i></p>
+              <section class="flex justify-between mb-2">
+                <div class="">
+                  <p class="text-blue text-xl font-semibold">Papyro</p>
+                  <p><i>Broadcast Installer</i></p>
+                </div>
+                <div class="self-center w-1/3">
+                  <img class="w-12 rounded-md" src="images/papyro.png" />
+                </div>
+              </section>
               <ul class="text-grey ul">
                 <li>
                   Broadcast equipment installation (matrix, patch panel, video
@@ -393,8 +469,17 @@
               </ul>
             </div>
             <div class="mt-2">
-              <p class="text-blue text-xl font-semibold">Telefonica (TBS)</p>
-              <p><i>Booking operator</i></p>
+              <section class="flex justify-between mb-2">
+                <div class="">
+                  <p class="text-blue text-xl font-semibold">
+                    Telefonica (TBS)
+                  </p>
+                  <p><i>Booking operator</i></p>
+                </div>
+                <div class="self-center w-1/3">
+                  <img class="w-12 rounded-md" src="images/tele.png" />
+                </div>
+              </section>
               <ul class="text-grey text-sm ul">
                 <li>
                   Reservation, reception and distribution of signal by OFm
