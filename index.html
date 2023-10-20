@@ -24,6 +24,7 @@
       .ul li {
         list-style-type: circle;
         font-size: 0.8rem;
+        width: 95%;
       }
       #customRange {
         border-radius: 5px;
@@ -92,9 +93,12 @@
         style="margin-top: -4.25rem"
       >
         <section
-          class="flex-col space-y-5 w-2/3 text-center md:text-left self-center mt-6 md:-mt-0 bg-gray pr-36 pt-28 pb-32 pl-2 md:pl-16 lg:pl-36"
+          class="flex-col space-y-5 md:w-2/3 text-center md:text-left self-center mt-6 md:-mt-0 bg-gray pt-28 pb-32 pl-2 pr-2 md:pl-12 md:pr-12 lg:pl-32 lg:pr-32"
         >
-          <p class="text-grey font-bold text-lg">Hello World</p>
+          <p class="text-grey font-bold text-lg">
+            Hello World
+            <i class="fa-solid text-light text-2xl fa-satellite-dish"></i>
+          </p>
           <h1 class="text-4xl font md:text-5xl">
             I'm RICARDO GARCIA
             <span class="text-blue">BROADCAST ENGINEER</span>
@@ -118,8 +122,8 @@
 
           <!--   -->
         </section>
-        <section class="w-1/3 pt-28">
-          <div class="w-56 h-auto -ml-12 mt-16">
+        <section class="w-1/3 pt-28 m-auto md:m-0">
+          <div class="w-56 h-auto md:-ml-12 md:mt-16">
             <img src="images/hero.png" alt="" class="w-100 rounded-xl" />
           </div>
         </section>
@@ -149,19 +153,19 @@
       </div>
       <br /><br />
       <div
-        class="flex flex-col-reverse md:flex-row gap-y-4"
+        class="flex flex-col md:flex-row gap-y-4"
         style="margin-top: -4.25rem"
       >
         <section class="w-1/3 self-center">
-          <div class="w-56 h-auto relative left-1/2 ml-12">
+          <div class="w-56 h-auto relative md:left-1/3 lg:left-1/2 lg:ml-12">
             <img src="images/hero.png" alt="" class="w-100 rounded-xl" />
           </div>
         </section>
         <section
-          class="flex-col space-y-5 w-2/3 text-center md:text-left self-center md:-mt-0 bg-gray pr-36 pt-24 pb-20 pl-2 md:pl-16 lg:pl-36"
+          class="flex-col space-y-5 md:w-2/3 text-center md:text-left self-center md:-mt-0 bg-gray pt-24 pb-20 pl-2 md:pl-20 md:pr-8 lg:pl-36 lg:pr-28"
         >
           <p class="text-4xl font md:text-3xl">About Me</p>
-          <p class="text-grey -mt-12 text-sm">
+          <p class="text-grey -mt-12 text-sm pb-8 md:pb-0">
             I have a wealth experience in the <b><i>audiovisual field</i></b> ,
             from working as an operator or technician in studios to directing
             mobile unit. This versatility along with my problem-solving skills
@@ -294,8 +298,8 @@
       <br />
       <br />
 
-      <div class="lg:px-16 mt-10">
-        <div class="flex justify-evenly">
+      <div class="px-2 md:px-8 lg:px-16 mt-10">
+        <div class="flex justify-evenly gap-x-4">
           <section class="w-1/2">
             <p class="text-3xl font-semibold font -mt-4">Experience</p>
             <br />
@@ -394,72 +398,73 @@
           </section>
         </div>
         <br /><br />
-        <section
-          class="w-full grid grid-cols-1 es:grid-cols-2 md:grid-cols-2 gap-y-6 mt-4"
-        >
+        <div>
           <p class="text-3xl font font-bold">Education/Training</p>
-          <br />
-          <div>
-            <p class="text-blue text-xl font-semibold">
-              Bilingual Deree in Audiovisual Communication
-            </p>
-            <p class="flex gap-x-4">
-              <i>Universidad Carlos III de Madrid</i>
-              <span class="self-center text-grey text-sm"
-                ><i>2013-2017</i></span
-              >
-            </p>
+          <section
+            class="w-full grid grid-cols-1 es:grid-cols-2 md:grid-cols-2 gap-y-6 gap-x-2 mt-4"
+          >
+            <div>
+              <p class="text-blue text-xl font-semibold text-center">
+                Bilingual Deree in Audiovisual Communication
+              </p>
+              <p class="flex gap-x-4 justify-center">
+                <i>Universidad Carlos III de Madrid</i>
+                <span class="self-center text-grey text-sm"
+                  ><i>2013-2017</i></span
+                >
+              </p>
 
-            <div class="w-48 mt-2 h-auto rounded-xl">
-              <img src="images/uc3.jpeg" alt="" class="w-100 rounded-lg" />
+              <div class="w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4">
+                <img src="images/uc3.jpeg" alt="" class="w-100 rounded-lg" />
+              </div>
             </div>
-          </div>
-          <div>
-            <p class="text-blue text-xl font-semibold">
-              Camera operator course in film amd TV
-            </p>
-            <p class="flex gap-x-4">
-              <i>CES, Escuela de Imagen y Sonido</i>
-              <span class="text-grey text-sm self-center"
-                ><i>2018-2019</i></span
-              >
-            </p>
+            <div>
+              <p class="text-blue text-xl font-semibold text-center">
+                Camera operator course in film amd TV
+              </p>
+              <p class="flex gap-x-4 justify-center">
+                <i>CES, Escuela de Imagen y Sonido</i>
+                <span class="text-grey text-sm self-center"
+                  ><i>2018-2019</i></span
+                >
+              </p>
 
-            <div class="w-48 h-auto rounded-xl">
-              <img src="images/ces.jpeg" alt="" class="w-100 rounded-lg" />
+              <div class="w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4">
+                <img src="images/ces.jpeg" alt="" class="w-100 rounded-lg" />
+              </div>
             </div>
-          </div>
-          <div>
-            <p class="text-blue text-xl font-semibold">
-              Technical Master Degree. TV, <br />
-              recording and radio set specialist
-            </p>
-            <p class="flex gap-x-4">
-              <i>CES, Escuela de Imagen y Sonido</i>
-              <span class="text-grey text-sm self-center"
-                ><i>2019-2020</i></span
-              >
-            </p>
+            <div>
+              <p class="text-blue text-xl font-semibold text-center">
+                Technical Master Degree. TV, <br />
+                recording and radio set specialist
+              </p>
+              <p class="flex gap-x-4 justify-center">
+                <i>CES, Escuela de Imagen y Sonido</i>
+                <span class="text-grey text-sm self-center"
+                  ><i>2019-2020</i></span
+                >
+              </p>
 
-            <div class="w-48 h-auto rounded-xl">
-              <img src="images/ces.jpeg" alt="" class="w-100 rounded-lg" />
+              <div class="w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4">
+                <img src="images/ces.jpeg" alt="" class="w-100 rounded-lg" />
+              </div>
             </div>
-          </div>
-          <div>
-            <p class="text-blue text-xl font-semibold">
-              LSM and LSM - Via EVS <br />
-              Operator
-            </p>
-            <p class="flex gap-x-4">
-              <i>EVS Training</i>
-              <span class="text-grey text-sm self-center"><i>2022-</i></span>
-            </p>
+            <div class="self-center">
+              <p class="text-blue text-xl font-semibold text-center">
+                LSM and LSM - Via EVS <br />
+                Operator
+              </p>
+              <p class="flex gap-x-4 justify-center">
+                <i>EVS Training</i>
+                <span class="text-grey text-sm self-center"><i>2022-</i></span>
+              </p>
 
-            <div class="w-48 h-auto rounded-xl">
-              <img src="images/evs.jpeg" alt="" class="w-100 rounded-lg" />
+              <div class="w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4">
+                <img src="images/evs.jpeg" alt="" class="w-100 rounded-lg" />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
       <br /><br /><br />
       <!-- <div>
