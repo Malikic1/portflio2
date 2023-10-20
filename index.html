@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Ricardo-Garcia</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Long+Cang&family=Audiowide&display=swap");
+      .logo {
+        font-family: "Long Cang", cursives;
+      }
+      .font {
+        font-family: "Audiowide", cursives;
+      }
+      .ul li {
+        list-style-type: circle;
+        font-size: 0.8rem;
+      }
+      #customRange {
+        border-radius: 5px;
+        height: 5px;
+      }
+      #customRange:-webkit-slider-thumb {
+        background-color: #3371f2 !important;
+        appearance: none;
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-light">
+    <header
+      class="flex justify-between px-2 md:px-4 lg:px-8 py-4 relative"
+      style="z-index: 3"
+    >
+      <div>
+        <h1 class="text-3xl text-pink logo">
+          <b>Persona</b>
+        </h1>
+      </div>
+      <div class="hidden emd:block self-center" id="nav">
+        <nav
+          class="flex flex-col gap-y-2 emd:flex-row absolute top-16 left-0 bg-darkgrey w-full emd:relative emd:top-0 emd:bg-transparent pb-3 emd:pb-0 pl-2 emd:pl-0"
+          style="z-index: 5"
+        >
+          <a
+            href=""
+            class="text-lg emd:text-base my-1 emd:my-0 text-blue border-b border-blue w-12"
+            >Home</a
+          >
+          <a href="" class="text-lg emd:text-base emd:ml-3 text-whitesmoke"
+            >About</a
+          >
+          <a
+            href=""
+            class="text-lg emd:text-base my-1 emd:my-0 emd:ml-3 text-whitesmoke"
+            >Portfolio</a
+          >
+          <a href="" class="text-lg emd:text-base emd:ml-3 text-whitesmoke"
+            >Services</a
+          >
+          <a
+            href=""
+            class="text-lg emd:text-base my-1 emd:my-0 emd:ml-3 text-whitesmoke"
+            >Contact</a
+          >
+          <div class="space-x-4 emd:space-x-0">
+            <a
+              href=""
+              class="w-20 emd:ml-3 text-blue text-lg text-pink emd:text-sm border-2 border-blue rounded-lg emd:rounded-2xl px-4 py-1 font-semibold"
+              >Contact</a
+            >
+          </div>
+        </nav>
+      </div>
+      <div class="emd:hidden">
+        <button id="menu_btn">
+          <i class="fa-solid fa-bars text-2xl text-pink"></i>
+        </button>
+      </div>
+    </header>
+    <main class="">
+      <div
+        class="flex flex-col-reverse md:flex-row gap-y-4"
+        style="margin-top: -4.25rem"
+      >
+        <section
+          class="flex-col space-y-5 w-2/3 text-center md:text-left self-center mt-6 md:-mt-0 bg-gray pr-36 pt-28 pb-32 pl-2 md:pl-16 lg:pl-36"
+        >
+          <p class="text-grey font-bold text-lg">Hello World</p>
+          <h1 class="text-4xl font md:text-5xl">
+            I'm RICARDO GARCIA
+            <span class="text-blue">BROADCAST ENGINEER</span>
+          </h1>
+          <p class="text-base text-grey">
+            An engineer skilled in a multifaceted field of engineering that
+            include information technology, information management, electrical
+            engineering and broadcast knowledge.
+          </p>
+
+          <button
+            class="text-blue text-sm border-2 border-blue rounded-3xl px-4 py-2 font-semibold"
+          >
+            Download CV
+          </button>
+          <button
+            class="bg-blue text-light text-sm border border-blue rounded-3xl px-4 py-2 ml-3 font-bold"
+          >
+            HIRE ME
+          </button>
+
+          <!--   -->
+        </section>
+        <section class="w-1/3 pt-28">
+          <div class="w-56 h-auto -ml-12 mt-16">
+            <img src="images/hero.png" alt="" class="w-100 rounded-xl" />
+          </div>
+        </section>
+      </div>
+
+      <div class="my-20">
+        <section class="grid grid-cols-2 es:grid-cols-4 gap-y-3 justify-around">
+          <div class="pr-2 esm:pr-4 border-r border-pink text-center">
+            <span class="text-blue text-xl font-bold">5+</span><br />
+            <small class="text-grey text-base font-semibold">Artwork</small>
+          </div>
+          <div class="px-2 esm:px-4 border-r border-pink text-center">
+            <span class="text-blue text-xl font-bold">12+</span><br />
+            <small class="text-grey text-base font-semibold"
+              >Previous Jobs</small
+            >
+          </div>
+          <div class="px-2 esm:px-4 border-r border-pink text-center">
+            <span class="text-blue text-xl font-bold">4+</span><br />
+            <small class="text-grey text-base font-semibold">Experience</small>
+          </div>
+          <div class="pl-2 esm:pl-4 text-center">
+            <span class="text-blue text-xl font-bold">100+</span><br />
+            <small class="text-grey text-base font-semibold">Projects</small>
+          </div>
+        </section>
+      </div>
+      <br /><br />
+      <div
+        class="flex flex-col-reverse md:flex-row gap-y-4"
+        style="margin-top: -4.25rem"
+      >
+        <section class="w-1/3 self-center">
+          <div class="w-56 h-auto relative left-1/2 ml-12">
+            <img src="images/hero.png" alt="" class="w-100 rounded-xl" />
+          </div>
+        </section>
+        <section
+          class="flex-col space-y-5 w-2/3 text-center md:text-left self-center md:-mt-0 bg-gray pr-36 pt-24 pb-20 pl-2 md:pl-16 lg:pl-36"
+        >
+          <p class="text-4xl font md:text-3xl">About Me</p>
+          <p class="text-grey -mt-12 text-sm">
+            I have a wealth experience in the <b><i>audiovisual field</i></b> ,
+            from working as an operator or technician in studios to directing
+            mobile unit. This versatility along with my problem-solving skills
+            demonstrate my ability quality and professionalism of broadcast
+            transmissions combined with my solid training, I consider myself a
+            professional all-rounder technician prepared to face any challenges
+            in this exciting field.
+          </p>
+          <div class="flex">
+            <section class="w-1/2">
+              <p class="relative -top-4">
+                <span class="text-blue text-base font-semibold">Agility</span
+                ><br />
+                <input
+                  type="range"
+                  name=""
+                  id="customRange"
+                  value="80"
+                  min="0"
+                  max="100"
+                  class="relative -top-3"
+                  disabled
+                />
+              </p>
+              <p class="relative -top-6">
+                <span class="text-blue text-base font-semibold">Puntality</span
+                ><br />
+                <input
+                  type="range"
+                  name=""
+                  id="customRange"
+                  value="90"
+                  min="0"
+                  max="100"
+                  class="relative -top-3"
+                  disabled
+                />
+              </p>
+              <p class="relative -top-6">
+                <span class="text-blue text-base font-semibold"
+                  >Hardworking</span
+                ><br />
+                <input
+                  type="range"
+                  name=""
+                  id="customRange"
+                  value="100"
+                  min="0"
+                  max="100"
+                  class="relative -top-3"
+                  disabled
+                />
+              </p>
+              <p class="relative -top-6">
+                <span class="text-blue text-base font-semibold"
+                  >Team Cooperation</span
+                ><br />
+                <input
+                  type="range"
+                  name=""
+                  id="customRange"
+                  value="95"
+                  min="0"
+                  max="100"
+                  class="relative -top-2"
+                  disabled
+                />
+              </p>
+            </section>
+            <section class="w-1/2">
+              <p class="-mt-4">
+                <span class="text-blue font-semibold">Driving Licencse </span
+                ><br />
+                <span class="text-grey font-semibold"
+                  >B and A2 with own vehicle</span
+                >
+              </p>
+              <br />
+              <p class="text-blue relative -top-4 font-bold text-lg">
+                Languages
+              </p>
+              <p class="-mt-2">
+                <span class="text-grey font-semibold">Spanish: </span
+                ><span class="text-blue text-sm font-semibold"
+                  >&nbsp; Native</span
+                >
+              </p>
+              <p class="mt-2">
+                <span class="text-grey font-semibold">English:</span
+                ><span class="text-blue text-sm font-semibold"
+                  >&nbsp; Advanced (c1)</span
+                >
+              </p>
+              <p class="mt-2">
+                <span class="text-grey font-semibold">Arabic:</span>
+                <span class="text-blue text-sm font-semibold"
+                  >&nbsp; Medium (B1)</span
+                >
+              </p>
+            </section>
+          </div>
+        </section>
+      </div>
+      <br /><br />
+      <div class="">
+        <p class="text-3xl font-bold text-center my-4 font">My skills</p>
+        <section>
+          <div class="flex gap-x-1 sm:gap-x-4 justify-evenly">
+            <div class="self-center">
+              <img class="w-12 rounded-md" src="images/img5.png" />
+            </div>
+            <div class="self-center">
+              <img class="w-24 rounded-md" src="images/img1.png" />
+            </div>
+            <div class="self-center">
+              <img class="w-20 rounded-md" src="images/img4.png" />
+            </div>
+            <div class="self-center">
+              <img class="w-20 rounded-md" src="images/img6.jpg" />
+            </div>
+            <div class="self-center">
+              <img class="w-20 rounded-md" src="images/img3.png" />
+            </div>
+            <div class="self-center">
+              <img class="w-20 rounded-md" src="images/img2.png" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <br />
+      <br />
+
+      <div class="lg:px-16 mt-10">
+        <div class="flex justify-evenly">
+          <section class="w-1/2">
+            <p class="text-3xl font-semibold font -mt-4">Experience</p>
+            <br />
+            <div class="">
+              <p class="text-blue text-xl font-semibold">ParagmaticPlay</p>
+              <p><i>Broadcast Engineer</i></p>
+              <ul class="text-grey text-sm ul">
+                <li>
+                  Designing drafts for both studio and server room (and the
+                  racks).
+                </li>
+                <li>Specialised in chroma keying studios.</li>
+                <li>
+                  Regular maintainance of equipment to ensure flawless
+                  performances.
+                </li>
+                <li>Sign off AV & Broadcast side.</li>
+              </ul>
+            </div>
+            <div class="mt-3">
+              <p class="text-blue text-xl font-se,ibold">ATM Broadcast</p>
+              <p><i>OB Technical Manager</i></p>
+              <ul class="text-grey text-sm ul">
+                <li>
+                  Supervision and management of all technical needs of the
+                  <br />
+                  OB truck to cover the event and going successfully in air.
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3">
+              <p class="text-blue text-xl font-semibold">Agencia EFE</p>
+              <p><i>Master Control Room</i></p>
+              <ul class="text-grey text-sm ul">
+                <li>Signal routing by matrix.</li>
+                <li>Satellite reception (IRDS).</li>
+                <li>
+                  Signal reception and supervision (satellite, 4G and 5G,players
+                  etc).
+                </li>
+                <li>Recording media systems.</li>
+                <li>Live streaming and playout.</li>
+              </ul>
+            </div>
+          </section>
+          <section class="w-1/2">
+            <div class="mt-10">
+              <p class="text-blue text-xl font-semibold">EL TORO TV</p>
+              <p><i>Master Control Room</i></p>
+              <ul class="text-grey text-sm ul">
+                <li>Signal routing by matrix.</li>
+                <li>Satellite reception.</li>
+                <li>
+                  Signal reception and supervision (satellite, 4G and 5G,players
+                  etc). Recording System.
+                </li>
+                <li>Support to editing and playout platform.</li>
+                <li>Internet and local network connection support.</li>
+                <li>
+                  Inter-Connection and distribution of production controls.
+                </li>
+                <li>Equipment mentainance.</li>
+              </ul>
+            </div>
+
+            <div class="mt-2">
+              <p class="text-blue text-xl font-semibold">Papyro</p>
+              <p><i>Broadcast Installer</i></p>
+              <ul class="text-grey text-sm ul">
+                <li>
+                  Broadcast equipment installation (matrix, patch panel, video
+                  mixer, audio desk and wiring, RJ-45 network, monitoring
+                  playouts...)
+                </li>
+                <li>
+                  Installation of audiovisual rooms (LED screens, projector,
+                  conference microphones, audio equipment).
+                </li>
+              </ul>
+            </div>
+            <div class="mt-2">
+              <p class="text-blue text-xl font-semibold">Telefonica (TBS)</p>
+              <p><i>Booking operator</i></p>
+              <ul class="text-grey text-sm ul">
+                <li>
+                  Reservation, reception and distribution of signal by OFm
+                  Satellite, 4G and 5g, OTT, Signal Tracking
+                </li>
+
+                <li>
+                  Technical troubleshootimg and communication with originationg
+                  MCR
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <br /><br />
+        <section
+          class="w-full grid grid-cols-1 es:grid-cols-2 md:grid-cols-2 gap-y-6 mt-4"
+        >
+          <p class="text-3xl font font-bold">Education/Training</p>
+          <br />
+          <div>
+            <p class="text-blue text-xl font-semibold">
+              Bilingual Deree in Audiovisual Communication
+            </p>
+            <p class="flex gap-x-4">
+              <i>Universidad Carlos III de Madrid</i>
+              <span class="self-center text-grey text-sm"
+                ><i>2013-2017</i></span
+              >
+            </p>
+
+            <div class="w-48 mt-2 h-auto rounded-xl">
+              <img src="images/uc3.jpeg" alt="" class="w-100 rounded-lg" />
+            </div>
+          </div>
+          <div>
+            <p class="text-blue text-xl font-semibold">
+              Camera operator course in film amd TV
+            </p>
+            <p class="flex gap-x-4">
+              <i>CES, Escuela de Imagen y Sonido</i>
+              <span class="text-grey text-sm self-center"
+                ><i>2018-2019</i></span
+              >
+            </p>
+
+            <div class="w-48 h-auto rounded-xl">
+              <img src="images/ces.jpeg" alt="" class="w-100 rounded-lg" />
+            </div>
+          </div>
+          <div>
+            <p class="text-blue text-xl font-semibold">
+              Technical Master Degree. TV, <br />
+              recording and radio set specialist
+            </p>
+            <p class="flex gap-x-4">
+              <i>CES, Escuela de Imagen y Sonido</i>
+              <span class="text-grey text-sm self-center"
+                ><i>2019-2020</i></span
+              >
+            </p>
+
+            <div class="w-48 h-auto rounded-xl">
+              <img src="images/ces.jpeg" alt="" class="w-100 rounded-lg" />
+            </div>
+          </div>
+          <div>
+            <p class="text-blue text-xl font-semibold">
+              LSM and LSM - Via EVS <br />
+              Operator
+            </p>
+            <p class="flex gap-x-4">
+              <i>EVS Training</i>
+              <span class="text-grey text-sm self-center"><i>2022-</i></span>
+            </p>
+
+            <div class="w-48 h-auto rounded-xl">
+              <img src="images/evs.jpeg" alt="" class="w-100 rounded-lg" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <br /><br /><br />
+      <!-- <div>
+        <p class="text-3xl font-bold text-center"><i>Feature NFTs</i></p>
+        <br />
+        <section
+          class="w-full grid grid-cols-2 es:grid-cols-3 gap-x-1 esm:gap-x-0 gap-y-4"
+        >
+          <div
+            class="w-42 esm:w-48 md:w-56 h-auto m-auto px-2 pt-3 pb-1 bg-darkgrey rounded-xl"
+          >
+            <div>
+              <img src="img1.jpeg" alt="" class="w-100 rounded-lg" />
+            </div>
+            <div class="pt-1 flex justify-between">
+              <p class="flex flex-col">
+                <b>Thalyssra</b>
+              </p>
+              <p class="flex flex-col">
+                <button class="text-dark bg-light text-sm px-2 rounded-sm">
+                  <b>Art</b>
+                </button>
+              </p>
+            </div>
+            <div
+              class="opacity-75 m-auto flex justify-between py-1 mb-1 rounded-sm"
+            >
+              <p class="flex space-x-1">
+                <span class="self-center">
+                  <img src="icon.jpeg" alt="" class="w-8 esm:w-10 rounded-lg"
+                /></span>
+                <span>
+                  <small>Creator<br /><b>Ortega</b></small>
+                </span>
+              </p>
+              <p>
+                <small>Current Bid</small><br />
+                <b>4.89 ETH</b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-42 esm:w-48 md:w-56 h-auto m-auto px-2 pt-3 pb-1 bg-darkgrey rounded-xl"
+          >
+            <div>
+              <img src="img2.png" alt="" class="w-100 rounded-lg" />
+            </div>
+            <div class="pt-1 flex justify-between">
+              <p class="flex flex-col">
+                <b>Thalyssra</b>
+              </p>
+              <p class="flex flex-col">
+                <button class="text-dark bg-light text-sm px-2 rounded-sm">
+                  <b>Art</b>
+                </button>
+              </p>
+            </div>
+            <div
+              class="opacity-75 m-auto flex justify-between py-1 mb-1 rounded-sm"
+            >
+              <p class="flex space-x-1">
+                <span class="self-center">
+                  <img src="icon.jpeg" alt="" class="w-8 esm:w-10 rounded-lg"
+                /></span>
+                <span>
+                  <small>Creator<br /><b>Ortega</b></small>
+                </span>
+              </p>
+              <p>
+                <small>Current Bid</small><br />
+                <b>4.89 ETH</b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-42 esm:w-48 md:w-56 h-auto m-auto px-2 pt-3 pb-1 bg-darkgrey rounded-xl"
+          >
+            <div>
+              <img src="img13.jpeg" alt="" class="w-100 rounded-lg" />
+            </div>
+            <div class="pt-1 flex justify-between">
+              <p class="flex flex-col">
+                <b>Thalyssra</b>
+              </p>
+              <p class="flex flex-col">
+                <button class="text-dark bg-light text-sm px-2 rounded-sm">
+                  <b>Art</b>
+                </button>
+              </p>
+            </div>
+            <div
+              class="opacity-75 m-auto flex justify-between py-1 mb-1 rounded-sm"
+            >
+              <p class="flex space-x-1">
+                <span class="self-center">
+                  <img src="icon.jpeg" alt="" class="w-8 esm:w-10 rounded-lg"
+                /></span>
+                <span>
+                  <small>Creator<br /><b>Ortega</b></small>
+                </span>
+              </p>
+              <p>
+                <small>Current Bid</small><br />
+                <b>4.89 ETH</b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-42 esm:w-48 md:w-56 h-auto m-auto px-2 pt-3 pb-1 bg-darkgrey rounded-xl"
+          >
+            <div>
+              <img src="img4.jpeg" alt="" class="w-100 rounded-lg" />
+            </div>
+            <div class="pt-1 flex justify-between">
+              <p class="flex flex-col">
+                <b>Thalyssra</b>
+              </p>
+              <p class="flex flex-col">
+                <button class="text-dark bg-light text-sm px-2 rounded-sm">
+                  <b>Art</b>
+                </button>
+              </p>
+            </div>
+            <div
+              class="opacity-75 m-auto flex justify-between py-1 mb-1 rounded-sm"
+            >
+              <p class="flex space-x-1">
+                <span class="self-center">
+                  <img src="icon.jpeg" alt="" class="w-8 esm:w-10 rounded-lg"
+                /></span>
+                <span>
+                  <small>Creator<br /><b>Ortega</b></small>
+                </span>
+              </p>
+              <p>
+                <small>Current Bid</small><br />
+                <b>4.89 ETH</b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-42 esm:w-48 md:w-56 h-auto m-auto px-2 pt-3 pb-1 bg-darkgrey rounded-xl"
+          >
+            <div>
+              <img src="cube.JPEG" alt="" class="w-100 rounded-lg" />
+            </div>
+            <div class="pt-1 flex justify-between">
+              <p class="flex flex-col">
+                <b>Thalyssra</b>
+              </p>
+              <p class="flex flex-col">
+                <button class="text-dark bg-light text-sm px-2 rounded-sm">
+                  <b>Art</b>
+                </button>
+              </p>
+            </div>
+            <div
+              class="opacity-75 m-auto flex justify-between py-1 mb-1 rounded-sm"
+            >
+              <p class="flex space-x-1">
+                <span class="self-center">
+                  <img src="icon.jpeg" alt="" class="w-8 esm:w-10 rounded-lg"
+                /></span>
+                <span>
+                  <small>Creator<br /><b>Ortega</b></small>
+                </span>
+              </p>
+              <p>
+                <small>Current Bid</small><br />
+                <b>4.89 ETH</b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-42 esm:w-48 md:w-56 h-auto m-auto px-2 pt-3 pb-1 bg-darkgrey rounded-xl"
+          >
+            <div>
+              <img src="img9.jpeg" alt="" class="w-100 rounded-lg" />
+            </div>
+            <div class="pt-1 flex justify-between">
+              <p class="flex flex-col">
+                <b>Thalyssra</b>
+              </p>
+              <p class="flex flex-col">
+                <button class="text-dark bg-light text-sm px-2 rounded-sm">
+                  <b>Art</b>
+                </button>
+              </p>
+            </div>
+            <div
+              class="opacity-75 m-auto flex justify-between py-1 mb-1 rounded-sm"
+            >
+              <p class="flex space-x-1">
+                <span class="self-center">
+                  <img src="icon.jpeg" alt="" class="w-8 esm:w-10 rounded-lg"
+                /></span>
+                <span>
+                  <small>Creator<br /><b>Ortega</b></small>
+                </span>
+              </p>
+              <p>
+                <small>Current Bid</small><br />
+                <b>4.89 ETH</b>
+              </p>
+            </div>
+          </div>
+        </section>
+        <br /><br />
+        <p class="text-center">
+          <button
+            class="text-pink text-sm border-2 border-pink rounded-3xl px-4 py-2 ml-3 font-semibold"
+          >
+            View More
+          </button>
+        </p>
+      </div>
+      <br /><br /><br />
+      <div>
+        <p class="text-3xl font-bold text-center"><i>Feature Artist</i></p>
+        <br />
+        <section
+          class="w-full grid grid-cols-2 es:grid-cols-3 md:grid-cols-4 gap-y-4"
+        >
+          <div class="w-40 h-auto m-auto px-2 pt-3 pb-1 bg-darkgrey rounded-xl">
+            <div>
+              <img src="img12.jpeg" alt="" class="w-100 rounded-lg" />
+            </div>
+            <div class="pt-1 justify-between text-center">
+              <p class="w-12 absolute -mt-8 ml-12">
+                <img
+                  src="cd5.jpg"
+                  alt=""
+                  class="rounded-full border-light border-2"
+                />
+              </p>
+              <p class="mt-6">
+                <b>CryptoPunk</b><br />
+                <small>42.7k</small>
+              </p>
+            </div>
+          </div>
+          <div class="w-40 h-auto m-auto px-2 pt-3 pb-1 bg-darkgrey rounded-xl">
+            <div>
+              <img src="cd6.jpg" alt="" class="w-100 rounded-lg" />
+            </div>
+            <div class="pt-1 justify-between text-center">
+              <p class="w-12 absolute top -mt-8 ml-12">
+                <img
+                  src="cd4.JPEG"
+                  alt=""
+                  class="rounded-full border-light border-2"
+                />
+              </p>
+              <p class="mt-6">
+                <b>Craft Art</b><br />
+                <small>52.7k</small>
+              </p>
+            </div>
+          </div>
+          <div class="w-40 h-auto m-auto px-2 pt-3 pb-1 bg-darkgrey rounded-xl">
+            <div>
+              <img src="cd3.jpg" alt="" class="w-100 rounded-lg" />
+            </div>
+            <div class="pt-1 justify-between text-center">
+              <p class="w-12 absolute top -mt-8 ml-12">
+                <img
+                  src="cd1.jpeg"
+                  alt=""
+                  class="rounded-full border-light border-2"
+                />
+              </p>
+              <p class="mt-6">
+                <b>Doodles</b><br />
+                <small>12.7k</small>
+              </p>
+            </div>
+          </div>
+          <div class="w-40 h-auto m-auto px-2 pt-3 pb-1 bg-darkgrey rounded-xl">
+            <div>
+              <img src="cd2.jpeg" alt="" class="w-100 rounded-lg" />
+            </div>
+            <div class="pt-1 justify-between text-center">
+              <p class="w-12 absolute top -mt-8 ml-12">
+                <img
+                  src="cube.JPEG"
+                  alt=""
+                  class="rounded-full border-light border-2"
+                />
+              </p>
+              <p class="mt-6">
+                <b>Capsule House</b><br />
+                <small>65.7k</small>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <br /><br />
+        <p class="text-center">
+          <button
+            class="text-pink text-sm border-2 border-pink rounded-3xl px-4 py-2 font-semibold es:absolute es:-mt-48 es:ml-16 md:-mt-0 md:ml-0"
+          >
+            View More
+          </button>
+        </p>
+      </div>-->
+      <br /><br /><br />
+      <div
+        class="text-center bg-pinksmoke py-6 lg\:px-8 border-2 border-blue rounded-xl"
+      >
+        <h1 class="font-bold text-2xl text-blue"><i>Hire Me!</i></h1>
+        <p class="my-4 text-grey">
+          You can get to know me better here on my linkedin
+          <i class="fa-brands fa-linkedin"></i><br />
+          <a
+            href="https://www.linkedin.com/in/ricardo-garcia-roldan-176909175"
+            class="text-blue text-sm"
+            ><u>click to view my Linkedin</u></a
+          >
+        </p>
+        <p class="text-sm pb-2 font-bold">---- or ---</p>
+        <button class="px-4 py-2 text-smoke bg-blue rounded-3xl font-semibold">
+          Download CV
+        </button>
+      </div>
+      <br /><br /><br />
+    </main>
+    <footer class="bg-gray pt-5 pb-2">
+      <div class="text-center">
+        <p>Available for your <span class="text-blue">24/7 </span>service.</p>
+        <p class="text-sm text-grey">You can reach out to me through:</p>
+        <p>
+          <i class="fa-solid fa-envelope text-grey"></i>
+          <i class="text-blue text-sm font-bold"
+            >&nbsp;&nbsp;ricardogr95@gmail.com</i
+          >
+        </p>
+        <p>
+          <i class="fa-solid fa-phone text-grey"></i>
+          <i class="text-blue text-sm font-bold">&nbsp;&nbsp;+34695061511</i>
+        </p>
+      </div>
+
+      <br />
+      <div class="text-center text-sm">
+        ©Copyright 2023 <b class="text-blue">AzeezCode</b>. All rights reserved
+        <br />
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
