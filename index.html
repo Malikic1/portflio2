@@ -25,16 +25,25 @@
         .mt {
           margin-top: -1.2rem;
         }
+        .ul li {
+          list-style-type: circle;
+          font-size: 0.95rem;
+          width: calc(100% - 3rem);
+          margin-left: 3rem;
+        }
       }
       @media (min-width: 768px) {
         .mt {
           margin-top: -4.25rem;
         }
+        .ul li {
+          font-size: 0.85rem;
+          width: calc(100% - 10px);
+          margin-left: 10px;
+        }
       }
       .ul li {
         list-style-type: circle;
-        font-size: 0.8rem;
-        width: 95%;
       }
       #customRange {
         border-radius: 5px;
@@ -63,24 +72,19 @@
         >
           <a
             href=""
-            class="text-xl emd:text-xl my-1 emd:my-0 text-blue border-b border-blue w-12"
+            class="text-xl emd:text-lg my-1 emd:my-0 text-blue border-b border-blue w-12"
             >Home</a
           >
-          <a href="" class="text-xl emd:text-xl emd:ml-3 text-whitesmoke"
+          <a href="" class="text-xl emd:text-lg emd:ml-3 text-whitesmoke"
             >About</a
           >
           <a
             href=""
-            class="text-xl emd:text-xl my-1 emd:my-0 emd:ml-3 text-whitesmoke"
+            class="text-xl emd:text-lg my-1 emd:my-0 emd:ml-3 text-whitesmoke"
             >Portfolio</a
           >
-          <a href="" class="text-xl emd:text-xl emd:ml-3 text-whitesmoke"
+          <a href="" class="text-lg emd:text-xl emd:ml-3 text-whitesmoke"
             >Services</a
-          >
-          <a
-            href=""
-            class="text-xl emd:text-xl my-1 emd:my-0 emd:ml-3 text-whitesmoke"
-            >Contact</a
           >
           <div class="space-x-4 emd:space-x-0">
             <a
@@ -98,9 +102,11 @@
       </div>
     </header>
     <main class="">
-      <div class="flex flex-col md:flex-row gap-y-4 mt">
+      <div
+        class="flex flex-col md:flex-row gap-y-4 mt text-center md:text-left"
+      >
         <section
-          class="flex-col space-y-5 md:w-2/3 text-center md:text-left self-center mt-6 md:-mt-0 bg-gray pt-28 pb-32 pl-2 pr-2 md:pl-12 md:pr-12 lg:pl-32 lg:pr-32"
+          class="flex-col space-y-5 md:w-2/3 self-center mt-6 md:-mt-0 bg-gray pt-12 md:pt-28 pb-32 pl-2 pr-2 md:pl-12 md:pr-12 lg:pl-32 lg:pr-32"
         >
           <p class="text-grey font-bold text-xl">
             Hello World
@@ -129,8 +135,8 @@
 
           <!--   -->
         </section>
-        <section class="w-1/3 -mt-28 md:-mt-0 md:pt-28 m-auto md:m-0">
-          <div class="w-56 h-auto md:-ml-12 md:mt-16">
+        <section class="md:w-1/3 -mt-28 md:-mt-0 md:pt-28">
+          <div class="w-56 h-auto md:-ml-12 md:mt-16 m-auto md:m-0">
             <img src="images/hero.png" alt="" class="w-100 rounded-xl" />
           </div>
         </section>
@@ -139,11 +145,11 @@
       <div class="my-20">
         <section class="grid grid-cols-2 es:grid-cols-4 gap-y-3 justify-around">
           <div class="pr-2 esm:pr-4 border-r border-pink text-center">
-            <span class="text-blue text-xl font-bold">5+</span><br />
-            <small class="text-grey text-xl font-semibold">Artwork</small>
+            <span class="text-blue text-xl font-bold">7x</span><br />
+            <small class="text-grey text-xl font-semibold">Team Lead</small>
           </div>
           <div class="px-2 esm:px-4 border-r border-pink text-center">
-            <span class="text-blue text-xl font-bold">12+</span><br />
+            <span class="text-blue text-xl font-bold">3</span><br />
             <small class="text-grey text-xl font-semibold">Previous Jobs</small>
           </div>
           <div class="px-2 esm:px-4 border-r border-pink text-center">
@@ -161,16 +167,16 @@
         class="flex flex-col md:flex-row gap-y-4"
         style="margin-top: -4.25rem"
       >
-        <section class="w-1/3 self-center">
+        <section class="w-1/3 self-center hidden md:block">
           <div class="w-56 h-auto relative md:left-1/3 lg:left-1/2 lg:ml-12">
             <img src="images/hero.png" alt="" class="w-100 rounded-xl" />
           </div>
         </section>
         <section
-          class="flex-col space-y-5 md:w-2/3 text-center md:text-left self-center md:-mt-0 bg-gray pt-24 pb-20 pl-2 md:pl-20 md:pr-8 lg:pl-36 lg:pr-28"
+          class="flex-col space-y-5 md:w-2/3 text-center md:text-left self-center md:-mt-0 bg-gray pt-12 pb-4 md:pt-24 md:pb-20 pl-2 pr-2 md:pl-20 md:pr-8 lg:pl-36 lg:pr-28"
         >
           <p class="text-4xl font md:text-3xl">About Me</p>
-          <p class="text-grey -mt-12 text-sm pb-8 md:pb-0">
+          <p class="text-grey -mt-12 text-sm pb-8 md:pb-0 text-base">
             I have a wealth experience in the <b><i>audiovisual field</i></b> ,
             from working as an operator or technician in studios to directing
             mobile unit. This versatility along with my problem-solving skills
@@ -182,8 +188,7 @@
           <div class="flex">
             <section class="w-1/2">
               <p class="relative -top-4">
-                <span class="text-blue text-xl font-semibold">Agility</span
-                ><br />
+                <span class="text-lg font-semibold">Agility</span><br />
                 <input
                   type="range"
                   name=""
@@ -196,8 +201,7 @@
                 />
               </p>
               <p class="relative -top-6">
-                <span class="text-blue text-xl font-semibold">Puntality</span
-                ><br />
+                <span class="text-lg font-semibold">Puntality</span><br />
                 <input
                   type="range"
                   name=""
@@ -210,8 +214,7 @@
                 />
               </p>
               <p class="relative -top-6">
-                <span class="text-blue text-xl font-semibold">Hardworking</span
-                ><br />
+                <span class="text-lg font-semibold">Hardworking</span><br />
                 <input
                   type="range"
                   name=""
@@ -224,8 +227,7 @@
                 />
               </p>
               <p class="relative -top-6">
-                <span class="text-blue text-xl font-semibold"
-                  >Team Cooperation</span
+                <span class="text-lg font-semibold">Team Cooperation</span
                 ><br />
                 <input
                   type="range"
@@ -243,12 +245,12 @@
               <p class="-mt-4">
                 <span class="text-blue font-semibold">Driving Licencse </span
                 ><br />
-                <span class="text-grey font-semibold"
+                <span class="text-grey font-semibold text-base"
                   >B and A2 with own vehicle</span
                 >
               </p>
               <br />
-              <p class="text-blue relative -top-4 font-bold text-xl">
+              <p class="text-blue relative -top-4 font-bold text-lg">
                 Languages
               </p>
               <p class="-mt-2">
@@ -277,24 +279,26 @@
       <div class="">
         <p class="text-3xl font-bold text-center my-4 font">My skills</p>
         <section>
-          <div class="flex gap-x-1 sm:gap-x-4 justify-evenly">
-            <div class="self-center">
-              <img class="w-12 rounded-md" src="images/img5.png" />
+          <div
+            class="justify-evenly w-full grid grid-cols-3 md:grid-cols-4 gap-y-4"
+          >
+            <div class="self-center justify-self-center justify-self-center">
+              <img class="w-16 rounded-md" src="images/img5.png" />
             </div>
-            <div class="self-center">
-              <img class="w-24 rounded-md" src="images/img1.png" />
+            <div class="self-center justify-self-center">
+              <img class="w-28 rounded-md" src="images/img1.png" />
             </div>
-            <div class="self-center">
+            <div class="self-center justify-self-center">
               <img class="w-20 rounded-md" src="images/img4.png" />
             </div>
-            <div class="self-center">
-              <img class="w-20 rounded-md" src="images/img6.jpg" />
+            <div class="self-center justify-self-center">
+              <img class="w-24 rounded-md" src="images/img6.jpg" />
             </div>
-            <div class="self-center">
-              <img class="w-20 rounded-md" src="images/img3.png" />
+            <div class="self-center md:justify-self-end">
+              <img class="w-24 rounded-md" src="images/img3.png" />
             </div>
-            <div class="self-center">
-              <img class="w-20 rounded-md" src="images/img2.png" />
+            <div class="self-center md:justify-self-end">
+              <img class="w-24 rounded-md" src="images/img2.png" />
             </div>
           </div>
         </section>
@@ -303,14 +307,18 @@
       <br />
 
       <div class="px-2 md:px-8 lg:px-16 mt-10">
-        <div class="flex justify-evenly gap-x-4">
-          <section class="w-1/2">
-            <p class="text-3xl font-semibold font -mt-4">Experience</p>
+        <div class="flex flex-col md:flex-row justify-evenly gap-x-4">
+          <section class="md:w-1/2">
+            <p
+              class="text-3xl font-semibold font -mt-4 text-center md:text-left"
+            >
+              Experience
+            </p>
             <br />
             <div class="">
               <p class="text-blue text-xl font-semibold">ParagmaticPlay</p>
               <p><i>Broadcast Engineer</i></p>
-              <ul class="text-grey text-sm ul">
+              <ul class="text-grey ul">
                 <li>
                   Designing drafts for both studio and server room (and the
                   racks).
@@ -326,7 +334,7 @@
             <div class="mt-3">
               <p class="text-blue text-xl font-se,ibold">ATM Broadcast</p>
               <p><i>OB Technical Manager</i></p>
-              <ul class="text-grey text-sm ul">
+              <ul class="text-grey ul">
                 <li>
                   Supervision and management of all technical needs of the
                   <br />
@@ -337,7 +345,7 @@
             <div class="mt-3">
               <p class="text-blue text-xl font-semibold">Agencia EFE</p>
               <p><i>Master Control Room</i></p>
-              <ul class="text-grey text-sm ul">
+              <ul class="text-grey ul">
                 <li>Signal routing by matrix.</li>
                 <li>Satellite reception (IRDS).</li>
                 <li>
@@ -350,7 +358,7 @@
             </div>
           </section>
           <section class="w-1/2">
-            <div class="mt-10">
+            <div class="mt-4 md:mt-10">
               <p class="text-blue text-xl font-semibold">EL TORO TV</p>
               <p><i>Master Control Room</i></p>
               <ul class="text-grey text-sm ul">
@@ -372,7 +380,7 @@
             <div class="mt-2">
               <p class="text-blue text-xl font-semibold">Papyro</p>
               <p><i>Broadcast Installer</i></p>
-              <ul class="text-grey text-sm ul">
+              <ul class="text-grey ul">
                 <li>
                   Broadcast equipment installation (matrix, patch panel, video
                   mixer, audio desk and wiring, RJ-45 network, monitoring
@@ -418,7 +426,9 @@
                 >
               </p>
 
-              <div class="w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4">
+              <div
+                class="w-2/3 md:w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4"
+              >
                 <img src="images/uc3.jpeg" alt="" class="w-100 rounded-lg" />
               </div>
             </div>
@@ -433,7 +443,9 @@
                 >
               </p>
 
-              <div class="w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4">
+              <div
+                class="w-2/3 md:w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4"
+              >
                 <img src="images/ces.jpeg" alt="" class="w-100 rounded-lg" />
               </div>
             </div>
@@ -449,7 +461,9 @@
                 >
               </p>
 
-              <div class="w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4">
+              <div
+                class="w-2/3 md:w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4"
+              >
                 <img src="images/ces.jpeg" alt="" class="w-100 rounded-lg" />
               </div>
             </div>
@@ -463,7 +477,9 @@
                 <span class="text-grey text-sm self-center"><i>2022-</i></span>
               </p>
 
-              <div class="w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4">
+              <div
+                class="w-2/3 md:w-48 h-auto m-auto pb-2 md:pb-0 mt-2 md:mt-4"
+              >
                 <img src="images/evs.jpeg" alt="" class="w-100 rounded-lg" />
               </div>
             </div>
