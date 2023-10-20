@@ -21,6 +21,16 @@
       .font {
         font-family: "Audiowide", cursives;
       }
+      @media (max-width: 767px) {
+        .mt {
+          margin-top: -1.2rem;
+        }
+      }
+      @media (min-width: 768px) {
+        .mt {
+          margin-top: -4.25rem;
+        }
+      }
       .ul li {
         list-style-type: circle;
         font-size: 0.8rem;
@@ -88,10 +98,7 @@
       </div>
     </header>
     <main class="">
-      <div
-        class="flex flex-col-reverse md:flex-row gap-y-4"
-        style="margin-top: -4.25rem"
-      >
+      <div class="flex flex-col md:flex-row gap-y-4 mt">
         <section
           class="flex-col space-y-5 md:w-2/3 text-center md:text-left self-center mt-6 md:-mt-0 bg-gray pt-28 pb-32 pl-2 pr-2 md:pl-12 md:pr-12 lg:pl-32 lg:pr-32"
         >
@@ -103,7 +110,7 @@
             I'm RICARDO GARCIA
             <span class="text-blue">BROADCAST ENGINEER</span>
           </h1>
-          <p class="text-base text-grey">
+          <p class="text-lg text-grey">
             An engineer skilled in a multifaceted field of engineering that
             include information technology, information management, electrical
             engineering and broadcast knowledge.
