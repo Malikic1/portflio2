@@ -15,9 +15,9 @@ module.exports = {
       colors: {
         black: "black",
         light: "white",
-        smoke: " rgb(245, 245, 245)",
-        dark: " #1c1c1c",
-        gray: " rgb(86, 86, 86)",
+        smoke: "rgb(245, 245, 245)",
+        dark: "#1c1c1c",
+        gray: "rgb(86, 86, 86)",
         grey: "#acacac",
         trans: "rgba(25, 25, 25, 0.522)",
         blue: "#3371f2",

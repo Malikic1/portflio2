@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Long+Cang&family=Audiowide&display=swap");
+
+.footer-curve svg {
+  width: calc(292% + 1.3px);
+  height: 70px;
+}
+
+.curve3 svg {
+  width: calc(299% + 1.3px);
+  height: 203px;
+}
+
+.curve1 svg {
+  width: calc(100% + 1.3px);
+  height: 20px;
+}
+.footer-curve,
+.curve1,
+.curve2,
+.curve3,
+.about-top-curve,
+.about-bottom-curve {
+  line-height: 0;
+}
+
+.curve2 svg {
+  width: calc(261% + 1.3px);
+  height: 38px;
+}
+.shape-fill {
+  fill: rgb(86, 86, 86);
+}
+.footer-curve,
+.about-top-curve {
+  transform: rotate(180deg);
+}
+
+.about-top-curve svg,
+.about-bottom-curve svg {
+  width: calc(212% + 1.3px);
+  height: 38px;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .about-bottom-curve svg,
+  .about-top-curve svg {
+    width: calc(261% + 1.3px);
+    height: 35px;
+  }
+  .curve2 svg {
+    height: 16px;
+  }
+  .curve3 svg {
+    width: calc(261% + 1.3px);
+    height: 50px;
+  }
+}
+
+.logo {
+  font-family: "Long Cang", cursives;
+}
+.font {
+  font-family: "Audiowide", cursives;
+}
+@media (max-width: 767px) {
+  .mt {
+    margin-top: -1.2rem;
+  }
+  .ul li {
+    list-style-type: circle;
+    font-size: 0.95rem;
+    width: calc(100% - 3rem);
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .mt {
+    margin-top: -4.25rem;
+  }
+  .ul li {
+    font-size: 0.85rem;
+    width: calc(100% - 10px);
+    margin-left: 10px;
+  }
+}
+.ul li {
+  list-style-type: circle;
+}
+
+input[type="range"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 70%;
+  cursor: pointer;
+  outline: none;
+  /*  slider progress trick  */
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* Track: webkit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 7px;
+  background: #b3b5b9;
+  border-radius: 5px;
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+  height: 7px;
+  background: #b3b5b9;
+  border-radius: 16px;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 8px;
+  width: 8px;
+  background-color: #3371f2;
+
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px #3371f2;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 8px;
+  width: 8px;
+  background-color: #3371f2;
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px #3371f2;
+}
