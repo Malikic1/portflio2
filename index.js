@@ -5,26 +5,38 @@ menuButton.addEventListener("click", function () {
   nav.classList.toggle("hidden");
 });
 
-function currentDiv(n) {
-  showDivs((slideIndex = n));
+function scrollDisplay() {
+  // Scroll the entire document to a specific position
+  window.scrollTo({
+    top: 100,
+    behavior: "smooth", // Optional: smooth scrolling effect
+  });
 }
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " w3-opacity-off";
+function scrollDisplay1() {
+  // Scroll the entire document to a specific position
+  window.scrollTo({
+    top: 1200,
+    behavior: "smooth", // Optional: smooth scrolling effect
+  });
+}
+function scrollDisplay2() {
+  // Scroll the entire document to a specific position
+  window.scrollTo({
+    top: 1500,
+    behavior: "smooth", // Optional: smooth scrolling effect
+  });
+}
+function scrollDisplay3() {
+  // Scroll the entire document to a specific position
+  window.scrollTo({
+    top: 2500,
+    behavior: "smooth", // Optional: smooth scrolling effect
+  });
+}
+function scrollDisplay4() {
+  // Scroll the entire document to a specific position
+  window.scrollTo({
+    top: 9500,
+    behavior: "smooth", // Optional: smooth scrolling effect
+  });
 }
